@@ -4,7 +4,7 @@ import interfaces.StudentInfoProvider;
 
 public class Student extends Person {
 
-    private int id;
+    private static int id;
     private double GPA;
 
     public Student(String name, double GPA) {
