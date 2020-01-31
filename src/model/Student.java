@@ -4,11 +4,13 @@ import interfaces.StudentInfoProvider;
 
 public class Student extends Person {
 
-    private int id;
+    private final int id;
     private double GPA;
 
+    private static int nextId = 1000;
+
     public Student(String name, double GPA) {
-        this.id = 0;
+        this.id = getnextId();
         this.name = name;
         this.GPA = GPA;
     }
@@ -20,5 +22,11 @@ public class Student extends Person {
     @Override
     public String fullName() {
         return name;
+    }
+
+    public static int getnextId(){
+        int id = nextId;
+        nextId++;
+        return id;
     }
 }
