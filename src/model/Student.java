@@ -6,9 +6,10 @@ public class Student extends Person {
 
     private int id;
     private double GPA;
+    private static int nextNewID = 0;
 
     public Student(String name, double GPA) {
-        this.id = 0;
+        this.id = nextNewID++;
         this.name = name;
         this.GPA = GPA;
     }
