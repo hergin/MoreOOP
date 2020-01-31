@@ -1,3 +1,5 @@
+package model;
+
 import interfaces.DisplayModifier;
 import interfaces.StudentInfoProvider;
 
@@ -15,6 +17,7 @@ public class StudentInfoDisplay {
         if (displayModifier.addVerticalSpace())
             newLineCount = 1;
     }
+
 
     public void display() {
         System.out.println(produceDisplayString());

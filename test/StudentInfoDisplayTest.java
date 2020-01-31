@@ -1,5 +1,6 @@
 import interfaces.DisplayModifier;
 import interfaces.StudentInfoProvider;
+import model.StudentInfoDisplay;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
