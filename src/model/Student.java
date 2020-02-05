@@ -7,8 +7,10 @@ public class Student extends Person {
     private int id;
     private double GPA;
 
+    private static int nextID = 1000;
+
     public Student(String name, double GPA) {
-        this.id = 0;
+        this.id = nextID++;
         this.name = name;
         this.GPA = GPA;
     }
